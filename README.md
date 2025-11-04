@@ -32,6 +32,7 @@ pip install -r requirements.txt
 2. Run locally (dev server):
 
 ```bash
+get service account key and save as sa-key.json at root level in the Project
 export GOOGLE_APPLICATION_CREDENTIALS="/path/to/sa-key.json"
 python app.py
 ```
