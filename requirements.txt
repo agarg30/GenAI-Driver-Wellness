@@ -1,0 +1,11 @@
+Flask>=2.2              # Web framework for building the app and API
+gunicorn>=20.1          # Production WSGI server for running Flask on Cloud Run
+google-cloud-firestore>=2.20.0  # Firestore client for Python
+certifi>=2023.5.7       # Provides up-to-date root certificates for secure HTTPS
+google-generativeai==0.8.5  # Python client for Gemini/GenAI models
+
+# Notes:
+# - `google-generativeai` is the Python client used to call Gemini/GenAI in this repo.
+#   If a newer official package is published, pin accordingly.
+# - Keep secrets (GENAI_API_KEY, service account JSON) out of source. Use Secret Manager
+#   and a Cloud Run service account when deploying to Cloud Run.
