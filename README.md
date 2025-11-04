@@ -32,7 +32,7 @@ pip install -r requirements.txt
 2. Run locally (dev server):
 
 ```bash
-get service account key and save as sa-key.json at root level in the Project
+set service account key in google cloud console and save as sa-key.json at root level in the Project
 export GOOGLE_APPLICATION_CREDENTIALS="/path/to/sa-key.json"
 python app.py
 ```
@@ -78,6 +78,5 @@ gcloud run deploy driver-wellness-app \
 ```
 
 ## Notes
-- **Do NOT commit service account JSON or API keys. Rotate exposed keys immediately.**
 - The app uses Firestore for all driver data and can be extended for more features (e.g., weather, reminders).
 - For the hackathon, include your AI Studio prompt file and the Cloud Run URL in your submission.
